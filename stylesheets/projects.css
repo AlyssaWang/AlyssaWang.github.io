@@ -16,23 +16,30 @@ body {
     margin: 0;
 }
 
+h1 {
+    color: #24305E;
+}
+
 a, p {
     color: black;
 }
 
 a:hover {
     text-decoration: none;
-    color: #F8E9A1;
 }
 
-h2:hover {
-    color: #F8E9A1;
+.item-focus {
+    height: 100%;
+    padding: 24px;
+}
+
+.item-focus:hover {
+    color: #E3D27D;
 }
 
 #container {
     display: flex;
     width: 100%;
-
 }
 
 #sidebar {

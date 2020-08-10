@@ -16,13 +16,24 @@ body {
     margin: 0;
 }
 
-h2:hover {
-    color: #F76C6C;
-    text-decoration: none;
+h1 {
+    color: #24305E;
 }
 
 a, p {
     color: white;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.item-focus {
+    height: 100%;
+}
+
+.item-focus:hover {
+    color: #F76C6C;
 }
 
 #container {

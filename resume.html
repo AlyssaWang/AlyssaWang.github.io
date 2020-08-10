@@ -10,6 +10,7 @@
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
           crossorigin="anonymous">
     <link rel="stylesheet" href="stylesheets/resume.css">
+    <link rel="stylesheet" href="stylesheets/flip-card.css">
 </head>
 <body id="index">
 
@@ -41,17 +42,26 @@
         <div id="sidebar">
             <div id="sidebar-content">
                 <h1> RESUME </h1>
-                <a href="resume.pdf"> PRINT </a>
+                <a href="resume.pdf" target="_blank"> PRINT </a>
             </div>
         </div>
         <div id="content">
             <div id="main-content">
-                <div class="item-list-start"></div>
-                <div class="item-container1"></div>
+                <div class="item-list-cap1"></div>
+                <div class="item-container1 flip-card">
+                    <div class="flip-card-inner">
+                        <div class="item1 container item-focus flip-card-front">
+                            <h2> SWE @ MITRE </h2>
+                        </div>
+                        <div class="item1 container item-focus flip-card-back">
+                            <h3> Incoming August 2020 </h3>
+                        </div>
+                    </div>
+                </div>
                 <div class="item-container2"></div>
                 <div class="item-container1"></div>
                 <div class="item-container2"></div>
-                <div class="item-list-end"></div>
+                <div class="item-list-cap2"></div>
             </div>
         </div>
     </div>

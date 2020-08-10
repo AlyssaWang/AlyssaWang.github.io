@@ -9,14 +9,12 @@ https://www.awwwards.com/sites/waaark
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
-h1 {
+* {
   font-family: 'Open Sans', sans-serif;
-  color: #24305E;
-  font-weight: bold;
 }
 
-h2, a, p {
-  font-family: 'Open Sans', sans-serif;
+h1 {
+  font-weight: bold;
 }
 
 a:hover {
@@ -28,11 +26,18 @@ a:hover {
   align-content: center;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   overflow: auto;
 }
 
-.item-list-start {
+.item-list-cap1 {
   background-color: white;
+  height: 16.5vh;
+  width: 40vw;
+}
+
+.item-list-cap2 {
+  background-color: black;
   height: 16.5vh;
   width: 40vw;
 }
@@ -43,20 +48,21 @@ a:hover {
   width: 40vw;
 }
 
+.item1 {
+  color: white;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
 .item-container2 {
   background-color: white;
   height: 35vh;
   width: 40vw;
 }
 
-.item-list-end {
-  background-color: black;
-  height: 16.5vh;
-  width: 40vw;
-}
-
-.item1 {
-  color: white;
+.item2 {
+  color: black;
   height: 100%;
   width: 100%;
   text-align: center;

@@ -7,8 +7,20 @@ https://www.awwwards.com/sites/waaark
 #F8E9A1 light yellow
 */
 
-a, p {
+h1 {
+    background-color: #24305E;
+    /*color: #A8D0E6;*/
     color: white;
+    padding: 10px;
+}
+
+a, p, span {
+    color: #24305E;
+}
+
+a:hover {
+    background-color: white;
+    text-decoration: none;
 }
 
 .container {

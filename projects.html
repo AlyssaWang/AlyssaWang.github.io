@@ -10,6 +10,7 @@
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
           crossorigin="anonymous">
     <link rel="stylesheet" href="stylesheets/projects.css">
+    <link rel="stylesheet" href="stylesheets/flip-card.css">
 </head>
 <body id="index">
 
@@ -41,23 +42,85 @@
         <div id="sidebar">
             <div id="sidebar-content">
                 <h1> PROJECTS </h1>
-                <a href="projects.pdf"> PRINT </a>
+                <a href="projects.pdf" target="_blank"> PRINT </a>
             </div>
         </div>
         <div id="content">
             <div id="main-content">
-                <div class="item-list-start"></div>
-                <div class="item-container1">
-                    <a class="item1" href="bit.ly/gridirongauntlet">
-                        <div class="container">
-                            <h2>GRIDIRON GAUNTLET</h2>
+                <div class="item-list-cap1"></div>
+
+                <div class="item-container1 flip-card">
+                    <div class="flip-card-inner">
+                        <div class="item1 container item-focus flip-card-front">
+                            <h2> GRIDIRON GAUNTLET </h2>
+                            <h5> GAME DESIGN, GESTURE RECOGNITION, COLLISION DETECTION </h5>
                         </div>
-                    </a>
+                        <a class="item1" href="https://bit.ly/gridirongauntlet" target="_blank">
+                            <div class="container item-focus flip-card-back">
+                                <p style="color: #E3D27D"> Software Methods final project. </p>
+                                <p style="color: #E3D27D"> Single player iOS clone of the Super Mario Party game,
+                                    Gridiron Gauntlet. The player must avoid colliding with time-scaled moving enemies
+                                    within the game board bounds for as long as possible. </p>
+                                <p style="color: #E3D27D""> Swift/Xcode, SpriteKit, UIKit, GameplayKit, CoreGraphics </p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-                <div class="item-container2"></div>
-                <div class="item-container1"></div>
-                <div class="item-container2"></div>
-                <div class="item-list-end"></div>
+
+                <div class="item-container2 flip-card">
+                    <div class="flip-card-inner">
+                        <div class="item2 container item-focus flip-card-front">
+                            <h2> PIN‽ </h2>
+                            <h5> USER EXPERIENCE, DESIGN, USER TESTING </h5>
+                        </div>
+                        <a class="item2" href="https://bit.ly/pindocs" target="_blank">
+                            <div class="container item-focus flip-card-back">
+                                <p style="color: #E3D27D"> Human-Computer Interaction final project. </p>
+                                <p style="color: #E3D27D"> Encourages users to be curious via location-based
+                                    information crowdsourcing. </p>
+                                <p style="color: #E3D27D"> Balsamiq, Markdown, Git, contextual inquiry, paper and
+                                    digital prototypes, user testing </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="item-container1 flip-card">
+                    <div class="flip-card-inner">
+                        <div class="item1 container item-focus flip-card-front">
+                            <h2> CORNELL BOX 2 </h2>
+                            <h5> 3D GRAPHICS, CAMERA CONTROLS, TRANSFORMATIONS </h5>
+                        </div>
+                        <a class="item1" href="https://github.com/AlyssaWang/GraphicsPracticals2" target="_blank">
+                            <div class="container item-focus flip-card-back">
+                                <p style="color: #E3D27D"> Computer Graphics final project (2/2). </p>
+                                <p style="color: #E3D27D"> Created a rotating cube with a bespoke transformation system
+                                    and user-controlled camera built in WebGL. </p>
+                                <p style="color: #E3D27D"> JavaScript, HTML/CSS, WebGL, linear algebra </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="item-container2 flip-card">
+                    <div class="flip-card-inner">
+                        <div class="item2 container item-focus flip-card-front">
+                            <h2> CORNELL BOX 1 </h2>
+                            <h5> 3D GRAPHICS, CAMERA CONTROLS, TRANSFORMATIONS </h5>
+                        </div>
+                        <a class="item1" href="https://github.com/AlyssaWang/GraphicsPracticals" target="_blank">
+                            <div class="container item-focus flip-card-back">
+                                <p style="color: #E3D27D"> Computer Graphics final project (1/2). </p>
+                                <p style="color: #E3D27D"> Created a Cornell box featuring a rotating and bouncing
+                                    sphere and cube with shadows, lighting, collision detection, and user-controlled
+                                    camera in three.js. </p>
+                                <p style="color: #E3D27D"> JavaScript, HTML/CSS, three.js, linear algebra </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="item-list-cap2"></div>
             </div>
         </div>
     </div>
