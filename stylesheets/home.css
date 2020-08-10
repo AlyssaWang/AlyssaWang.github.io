@@ -19,8 +19,8 @@ a, p, span {
 }
 
 a:hover {
-    background-color: white;
     text-decoration: none;
+    color: white;
 }
 
 .container {

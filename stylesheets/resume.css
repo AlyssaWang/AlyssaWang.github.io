@@ -26,10 +26,12 @@ a, p {
 
 a:hover {
     text-decoration: none;
+    color: #374785;
 }
 
 .item-focus {
     height: 100%;
+    padding: 24px;
 }
 
 .item-focus:hover {

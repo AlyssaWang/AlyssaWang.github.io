@@ -17,10 +17,6 @@ h1 {
   font-weight: bold;
 }
 
-a:hover {
-  color: #374785;
-}
-
 .container, .item-container1, .item-container2 {
   display: flex;
   align-content: center;

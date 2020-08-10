@@ -26,6 +26,7 @@ a, p {
 
 a:hover {
     text-decoration: none;
+    color: #374785;
 }
 
 .item-focus {
