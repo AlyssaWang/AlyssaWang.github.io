@@ -1,0 +1,64 @@
+/*
+https://www.awwwards.com/sites/waaark
+#A8D0E6 light blue
+#374785 medium blue
+#24305E dark blue
+#F76C6C coral
+#F8E9A1 light yellow
+*/
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #F76C6C;
+    margin: 0;
+}
+
+h2:hover {
+    color: #F76C6C;
+    text-decoration: none;
+}
+
+a, p {
+    color: white;
+}
+
+#container {
+    display: flex;
+    width: 100%;
+}
+
+#sidebar {
+    width: 40%;
+    position: fixed;
+    left: 0;
+    height: 100vh;
+}
+
+#sidebar-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+#content {
+    width: 60%;
+    position: absolute;
+    right: 0;
+    height: 100vh;
+}
+
+#main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+

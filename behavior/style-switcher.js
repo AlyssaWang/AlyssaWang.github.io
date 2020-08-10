@@ -1,8 +1,8 @@
-let cssPath = "web-styles.css";
+let cssPath = "stylesheets/web-styles.css";
 if (navigator.platform === "iPhone" ||
     navigator.platform === "Android" ||
     navigator.platform === "Blackberry")
-    cssPath = "mobile-styles.css";
+    cssPath = "stylesheets/mobile-styles.css";
 
 const styleReference = document.createElement("link");
 styleReference.setAttribute("rel", "stylesheet");

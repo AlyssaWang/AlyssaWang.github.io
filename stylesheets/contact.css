@@ -7,6 +7,10 @@ https://www.awwwards.com/sites/waaark
 #F8E9A1 light yellow
 */
 
+a, p {
+    color: white;
+}
+
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
     background-color: transparent;

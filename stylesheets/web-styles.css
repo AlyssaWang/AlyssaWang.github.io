@@ -15,40 +15,50 @@ h1 {
   font-weight: bold;
 }
 
-a, p {
+h2, a, p {
   font-family: 'Open Sans', sans-serif;
-  color: white;
 }
 
 a:hover {
   color: #374785;
 }
 
-.container {
+.container, .item-container1, .item-container2 {
   display: flex;
   align-content: center;
   align-items: center;
   justify-content: center;
+  overflow: auto;
 }
 
-#index {
-  background-color: #A8D0E6;
+.item-list-start {
+  background-color: white;
+  height: 16.5vh;
+  width: 40vw;
 }
 
-#info-container {
-  /*background-color: #24305E;*/
-  flex-direction: column;
-  width: 80%;
-  height: 60%;
-  max-width: 600px;
-  max-height: 600px;
-  margin: 200px;
+.item-container1 {
+  background-color: black;
+  height: 35vh;
+  width: 40vw;
 }
 
-#profile-pic {
-  border-radius: 50%;
-  max-height: 200px;
-  max-width: 200px;
-  margin: 48px;
+.item-container2 {
+  background-color: white;
+  height: 35vh;
+  width: 40vw;
+}
+
+.item-list-end {
+  background-color: black;
+  height: 16.5vh;
+  width: 40vw;
+}
+
+.item1 {
+  color: white;
+  height: 100%;
+  width: 100%;
+  text-align: center;
 }
 

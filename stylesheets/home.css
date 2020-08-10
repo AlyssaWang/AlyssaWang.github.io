@@ -1,0 +1,28 @@
+/*
+https://www.awwwards.com/sites/waaark
+#A8D0E6 light blue
+#374785 medium blue
+#24305E dark blue
+#F76C6C coral
+#F8E9A1 light yellow
+*/
+
+a, p {
+    color: white;
+}
+
+.container {
+    flex-direction: column;
+    height: 85vh;
+}
+
+#index {
+    background-color: #A8D0E6;
+}
+
+#profile-pic {
+    border-radius: 50%;
+    max-height: 200px;
+    max-width: 200px;
+    margin: 48px;
+}

@@ -1,3 +1,5 @@
+// Not currently supported by Github Pages
+
 <?php
 // define variables and set to empty values
 $nameErr = $emailErr = $subjectErr = $messageErr = "";
