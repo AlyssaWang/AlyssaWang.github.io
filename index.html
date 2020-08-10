@@ -1,38 +1,57 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-  <h1>Alyssa Wang</h1>
-  <title>Alyssa Wang's Profile</title>
-  <link rel="stylesheet" href="stylesheet.css">
+
+    <title>Alyssa Wang</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+          crossorigin="anonymous">
 </head>
+<body id="index">
 
-<body>
-<img class="p1" src="alyssawang.jpg" width="150" height="150" alt="Photo of Alyssa Wang 1">
-<img class="p2" src="alyssa2.jpg" width="150" height="150" alt="Photo of Alyssa Wang 2">
-<img class="p3" src="alyssa3.jpg" width="150" height="150" alt="Photo of Alyssa Wang 3">
+<nav class="navbar navbar-expand-md">
+<!--    <a class="navbar-brand" href="index.html">Logo</a>-->
+<!--    <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">-->
+<!--        <span class="navbar-toggler-icon"></span>-->
+<!--    </button>-->
+    <div class="collapse navbar-collapse" id="main-navigation">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="projects.pdf">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="resume.pdf">Resume</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
 
+<div class="container">
+    <div class="container" id="info-container">
+        <img id="profile-pic" src="alyssa.jpg" alt="Alyssa Wang">
+        <p> Alyssa Wang </p>
 
-<h2>About Me</h2>
-<p>I live in Boston. Some of my interests include building rockets, reading, and listening to rock music.</p>
+    </div>
+</div>
 
-<h2>Hometown</h2>
-<p> Boston, Massachusetts </p>
-<img src="bostonimage.jpg" width="100" height="100" alt="Photo of Boston">
-
-<h2>University</h2>
-<p> Williams College </p>
-<img src="williamscollege.jpg" width="100" height="100" alt="Photo of Williams College">
-
-<h2>My Favorite Movies</h2>
-<ol>
-  <li class="mov1">Monte Python and the Holy Grail</li>
-  <li class="mov2">Inception</li>
-  <li class="mov3">WALLE</li>
-</ol>
-
-<h2>Other Profiles</h2>
-<ul>
-  <li><a href="https://plus.google.com/u/0/101816223529116984489/posts?cfem=1">Google+</a></li>
-  <li><a href="https://www.facebook.com/AlyssaCWang">Facebook</a></li>
-</ul>
-
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+<script src="style-switcher.js"></script>
 </body>
+</html>

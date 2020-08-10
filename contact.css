@@ -1,0 +1,68 @@
+/*
+https://www.awwwards.com/sites/waaark
+#A8D0E6 light blue
+#374785 medium blue
+#24305E dark blue
+#F76C6C coral
+#F8E9A1 light yellow
+*/
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    background-color: transparent;
+    border-color: white;
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input:focus, textarea:focus{
+    outline: none;
+    border-color: #24305E;
+}
+
+input[type=text]::placeholder, textarea::placeholder {
+    color: white;
+}
+
+input[type=text]:focus::placeholder, textarea:focus::placeholder {
+    color: #24305E;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #24305E;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker color */
+input[type=submit]:hover {
+    background-color: #374785;
+}
+
+.container {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact {
+    background-color: #F76C6C;
+}
+
+#form-container {
+    flex-direction: column;
+    width: 80%;
+    height: 60%;
+    margin: 40px 96px;
+}
