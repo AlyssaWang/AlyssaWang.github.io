@@ -37,22 +37,24 @@
 <div class="container">
     <h1>CONTACT</h1>
     <div class="container" id="form-container">
-        <form method="post" action="send-contact-form.php">
+        <form action="mail-test.php" method="post">
             <label for="name"></label>
             <input type="text" id="name" name="name" placeholder="Name*">
-            <span class="error"> <?php echo $nameErr;?></span>
+<!--            <span class="error"> <?php echo $nameErr;?></span>-->
 
             <label for="email"></label>
             <input type="text" id="email" name="email" placeholder="Email*">
-            <span class="error"> <?php echo $emailErr;?></span>
+<!--            <span class="error"> <?php echo $emailErr;?></span>-->
 
             <label for="subject"></label>
             <input type="text" id="subject" name="subject" placeholder="Subject*">
+<!--            <span class="error"> <?php echo $subjectErr;?></span>-->
 
             <label for="message"></label>
             <textarea id="message" name="message" placeholder="Your message here*" style="height:200px"></textarea>
+<!--            <span class="error"> <?php echo $messageErr;?></span>-->
 
-            <input type="submit" value="Submit">
+            <input type="submit" name="submit" value="Submit">
         </form>
     </div>
 </div>
