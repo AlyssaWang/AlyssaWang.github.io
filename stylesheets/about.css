@@ -56,8 +56,8 @@ a:hover {
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
     animation:
-            typing 3.5s steps(25, end) 1s,
-            blink-caret .75s step-end infinite 1s;
+            typing 3.5s steps(25, end),
+            blink-caret .75s step-end infinite;
 }
 
 /* The typewriter cursor effect */
