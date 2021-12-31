@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkalyssawang=self.webpackChunkalyssawang||[]).push([[595],{1595:function(a,s,e){a.exports=e.p+"static/media/projects.90d52706f00fa775a4bd.pdf"}}]);
