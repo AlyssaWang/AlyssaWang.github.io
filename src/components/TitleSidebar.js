@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Box, Drawer, Toolbar, Typography } from "@mui/material";
-// import "../styles/typewriter.css";
 import { makeStyles } from "@mui/styles";
 
 const useStyles = makeStyles({
@@ -30,9 +29,17 @@ const useStyles = makeStyles({
       color: "white",
     },
   },
+  text: {
+    maxWidth: "200px",
+    margin: "24px 0 0 0 !important",
+    padding: "0 24px",
+    display: "flex",
+    justifyContent: "center",
+    borderLeft: "3px dotted gray",
+  },
 });
 
-function TitleSidebar({ title, file }) {
+function TitleSidebar({ title, file, text }) {
   const classes = useStyles();
   const [pdf, setPdf] = useState(undefined);
 
@@ -56,11 +63,22 @@ function TitleSidebar({ title, file }) {
           {title.toUpperCase()}
         </Typography>
       </Box>
-      <Typography variant="overline" className={classes.fileLink}>
-        <a href={pdf} target="_blank" className={classes.fileLink}>
-          OPEN PDF
-        </a>
-      </Typography>
+      {file &&
+        <Typography variant="overline" className={classes.fileLink}>
+          <a href={pdf} target="_blank" className={classes.fileLink}>
+            OPEN PDF
+          </a>
+        </Typography>
+      }
+      {text.map(t => (
+        <Typography
+          variant="subtitle1"
+          color="text.secondary"
+          className={classes.text}
+        >
+          {t}
+        </Typography>
+      ))}
     </Drawer>
   );
 }

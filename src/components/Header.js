@@ -31,7 +31,7 @@ const useStyles = makeStyles({
 
 const Header = () => {
   const classes = useStyles();
-  const pages = ["Home", "Projects", "Resume"]; //"About",
+  const pages = ["Home", "Projects", "Resume", "About"];
 
   return (
     <AppBar

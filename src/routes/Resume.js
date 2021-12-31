@@ -28,7 +28,7 @@ function Resume() {
 
   return (
     <Box className={classes.root}>
-      <TitleSidebar title="Resume" file="resume.pdf" />
+      <TitleSidebar title="Resume" file="resume.pdf" text={[]} />
       <Box className={classes.cardContainer}>
         <ItemEndSpacer darkMode={true}/>
         {jobsList.map((job, i) => (

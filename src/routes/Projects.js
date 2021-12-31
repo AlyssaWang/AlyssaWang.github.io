@@ -28,7 +28,7 @@ function Projects() {
 
   return (
     <Box className={classes.root}>
-      <TitleSidebar title="Projects" file="projects.pdf" />
+      <TitleSidebar title="Projects" file="projects.pdf" text={[]} />
       <Box className={classes.cardContainer}>
         <ItemEndSpacer darkMode={true}/>
         {projectsList.map((project, i) => (
