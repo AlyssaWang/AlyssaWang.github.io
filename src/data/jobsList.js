@@ -5,9 +5,8 @@ export const jobsList = [
     subtitle: "Solving problems for a safer world.",
     link: "https://www.mitre.org/",
     textList: [
-      "Software Methods final project.",
-      "Single player iOS clone of the Super Mario Party game, Gridiron Gauntlet. The player must avoid colliding with time-scaled moving enemies within the game board bounds for as long as possible.",
-      "Swift/Xcode, SpriteKit, UIKit, GameplayKit, CoreGraphics",
+      "Developed a variety of web applications, dashboards, data visualizations, and proof-of-concept projects for multiple sponsors.",
+      "JavaScript/TypeScript, Python, React, Material UI, Flask, Power BI, TensorFlow, ElasticSearch, Vue, etc.",
     ],
   },
   {
