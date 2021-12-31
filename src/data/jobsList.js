@@ -1,0 +1,56 @@
+export const jobsList = [
+  {
+    id: "mitre",
+    title: "Software Engineer @ MITRE",
+    subtitle: "Solving problems for a safer world.",
+    link: "https://www.mitre.org/",
+    textList: [
+      "Software Methods final project.",
+      "Single player iOS clone of the Super Mario Party game, Gridiron Gauntlet. The player must avoid colliding with time-scaled moving enemies within the game board bounds for as long as possible.",
+      "Swift/Xcode, SpriteKit, UIKit, GameplayKit, CoreGraphics",
+    ],
+  },
+  {
+    id: "williams-research",
+    title: "Research Assistant @ Williams College",
+    subtitle: "Professor Iris Howley | HCI",
+    link: "http://www.cs.williams.edu/~iris/",
+    textList: [
+      "Prototyped a web app to analyze Bayesian Knowledge Tracing as an effective method for evaluating learning.",
+      "App features multiple dashboards: Admins can CRUD questions and answers, Users can answer questions, and after submitting a quiz, both are able to see a BKT results dashboard indicating level of learning achieved.",
+      "TypeScript, Angular, FireStore",
+    ],
+  },
+  {
+    id: "angular",
+    title: "Intern @ Google",
+    subtitle: "Angular",
+    textList: [
+      "Implemented filters, optimized data retrieval/storage, and added UI updates to the Caretaker Dashboard.",
+      "Provided advanced functionality for the Caretaker (internal); streamlined the Caretaking process on Angular.",
+      "TypeScript, Angular, Github API, NgRx, RxJS",
+    ],
+  },
+  {
+    id: "local-search",
+    title: "Intern @ Google",
+    subtitle: "Local Search UI",
+    textList: [
+      "Introduced user moderation voting and pending edit interaction to desktop Google Search.",
+      "Increased rates of location edit approval; provides additional feedback to users.",
+      "Impact: 37k additional votes/week (previously none).",
+      "JavaScript, React, JSLayouts, protocol buffers",
+    ],
+  },
+  {
+    id: "chrome-uma",
+    title: "Intern @ Google",
+    subtitle: "Chrome User Metrics Analysis",
+    textList: [
+      "EphHacks Best Execution Winner.",
+      "Created regression graphs (ranked) and optimized algorithms on the Chrome developer timeline dashboard.",
+      "Allows Chrome/Android developers to find regressions; led to simplified detection of causes of unusual metrics.",
+      "JavaScript, Python, Google Visualizations, Polymer",
+    ],
+  },
+];

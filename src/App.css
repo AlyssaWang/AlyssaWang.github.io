@@ -1,0 +1,46 @@
+/*
+https://www.awwwards.com/sites/waaark
+#A8D0E6 light blue
+#374785 medium blue
+#24305E dark blue
+#F76C6C coral
+#F8E9A1 light yellow
+*/
+
+body {
+  background-color: lightgray;
+}
+
+a, p {
+  color: #24305E;
+}
+
+.typewriter h3 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #F76C6C; /* The typewriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(25, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #F76C6C; }
+}
+
+#profile-pic {
+  border-radius: 50%;
+  max-height: 200px;
+  max-width: 200px;
+  margin: 48px;
+}
