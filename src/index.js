@@ -18,11 +18,11 @@ ReactDOM.render(
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/home" element={<App />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/resume" element={<Resume />} />
+        <Route path={process.env.PUBLIC_URL + "/"} element={<App />} />
+        <Route path={process.env.PUBLIC_URL + "/home"} element={<App />} />
+        <Route path={process.env.PUBLIC_URL + "/about"} element={<About />} />
+        <Route path={process.env.PUBLIC_URL + "/projects"} element={<Projects />} />
+        <Route path={process.env.PUBLIC_URL + "/resume"} element={<Resume />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
