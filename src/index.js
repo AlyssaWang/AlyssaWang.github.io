@@ -18,11 +18,11 @@ ReactDOM.render(
     <HashRouter basename={process.env.PUBLIC_URL}>
       <Header />
       <Routes>
-        <Route path="/" element={<App />} />
         <Route path="/home" element={<App />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/resume" element={<Resume />} />
+        <Route path="/" element={<App />} />
       </Routes>
     </HashRouter>
   </React.StrictMode>,

@@ -47,7 +47,7 @@ const Header = () => {
             {pages.map((page) => (
               <Box key={page} className={classes.linkContainer}>
                 <Link
-                  href={page.toLowerCase()}
+                  href={`#/${page.toLowerCase()}`}
                   underline="none"
                   variant="overline"
                   className={classes.link}
