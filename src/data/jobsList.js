@@ -46,7 +46,6 @@ export const jobsList = [
     title: "Intern @ Google",
     subtitle: "Chrome User Metrics Analysis",
     textList: [
-      "EphHacks Best Execution Winner.",
       "Created regression graphs (ranked) and optimized algorithms on the Chrome developer timeline dashboard.",
       "Allows Chrome/Android developers to find regressions; led to simplified detection of causes of unusual metrics.",
       "JavaScript, Python, Google Visualizations, Polymer",

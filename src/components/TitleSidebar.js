@@ -4,13 +4,12 @@ import { makeStyles } from "@mui/styles";
 
 const useStyles = makeStyles({
   root: {
-    width: "40%",
+    width: "400px",
     flexShrink: 0,
     "& .MuiDrawer-paper": {
       backgroundColor: "transparent",
       display: "flex",
       flexDirection: "column",
-      height: "80vh",
       alignItems: "center",
       justifyContent: "center",
       width: "40%",
