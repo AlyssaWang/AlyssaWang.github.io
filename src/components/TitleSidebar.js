@@ -12,7 +12,7 @@ const useStyles = makeStyles({
       flexDirection: "column",
       alignItems: "center",
       justifyContent: "center",
-      width: "40%",
+      width: "400px",
       boxSizing: "border-box",
       border: "none",
     },
