@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import TitleSidebar from "../components/TitleSidebar";
 import ItemCard from "../components/ItemCard";
@@ -9,8 +9,7 @@ import { jobsList } from "../data/jobsList";
 const useStyles = makeStyles({
   root: {
     display: "flex",
-    flexDirection: "row",
-    minHeight: "100vh",
+    minWidth: "fit-content",
     height: "100%",
     backgroundColor: "#bc97fd",
   },
@@ -30,7 +29,7 @@ function Resume() {
     <Box className={classes.root}>
       <TitleSidebar title="Resume" file="resume.pdf" text={[]} />
       <Box className={classes.cardContainer}>
-        <ItemEndSpacer darkMode={true}/>
+        <ItemEndSpacer darkMode={true} />
         {jobsList.map((job, i) => (
           <ItemCard
             id={`${job.id}-${i}`}
@@ -42,7 +41,7 @@ function Resume() {
             textList={job.textList}
           />
         ))}
-        <ItemEndSpacer darkMode={jobsList.length % 2 === 1}/>
+        <ItemEndSpacer darkMode={jobsList.length % 2 === 1} />
       </Box>
     </Box>
   );
