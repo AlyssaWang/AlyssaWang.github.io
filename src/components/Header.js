@@ -3,8 +3,6 @@ import {
   AppBar,
   Box,
   Toolbar,
-  Typography,
-  Container,
   Link,
 } from "@mui/material";
 import { makeStyles } from "@mui/styles";
@@ -24,7 +22,7 @@ const useStyles = makeStyles({
     display: "block",
     color: "#24305E !important",
     '&:hover': {
-       color: "white !important",
+      color: "white !important",
     },
   },
 });
@@ -41,24 +39,22 @@ const Header = () => {
       className={classes.root}
       sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }}
     >
-      <Container maxWidth="xl">
-        <Toolbar disableGutters>
-          <Box className={classes.linksContainer}>
-            {pages.map((page) => (
-              <Box key={page} className={classes.linkContainer}>
-                <Link
-                  href={`#/${page.toLowerCase()}`}
-                  underline="none"
-                  variant="overline"
-                  className={classes.link}
-                >
-                  {page}
-                </Link>
-              </Box>
-            ))}
-          </Box>
-        </Toolbar>
-      </Container>
+      <Toolbar disableGutters sx={{ margin: '0 16px'}}>
+        <Box className={classes.linksContainer}>
+          {pages.map((page) => (
+            <Box key={page} className={classes.linkContainer}>
+              <Link
+                href={`#/${page.toLowerCase()}`}
+                underline="none"
+                variant="overline"
+                className={classes.link}
+              >
+                {page}
+              </Link>
+            </Box>
+          ))}
+        </Box>
+      </Toolbar>
     </AppBar>
   );
 };
