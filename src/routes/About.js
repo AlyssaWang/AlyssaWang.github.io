@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Box, List, ListItem, Toolbar, Typography } from "@mui/material";
+import { Box, List, ListItem } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import TitleSidebar from "../components/TitleSidebar";
 import cake1 from "../files/cake1.jpg";
@@ -15,10 +15,9 @@ import cake8 from "../files/cake8.jpg";
 const useStyles = makeStyles({
   root: {
     display: "flex",
-    flexDirection: "row",
     alignItems: "center",
     justifyContent: "center",
-    minHeight: "100vh",
+    minWidth: "fit-content",
     height: "100%",
     backgroundColor: "#d9f3c4",
   },
@@ -50,7 +49,7 @@ function About() {
   }, []);
 
   const link = (url, text) => (
-    <a href={url} target="_blank" className={classes.link}>
+    <a href={url} target="_blank" rel="noreferrer" className={classes.link} >
       {text}
     </a>
   );
@@ -62,7 +61,7 @@ function About() {
         file=""
         text={[
           "Some hobbies of mine include cross-stitch, sending postcards, solving crosswords, and critically analyzing pop literature and media.",
-          "I also run a cake microblog. Here are some memorable cakes from the #caketour.",
+          <span>I also run a cake microblog. Here are some memorable cakes from the #caketour. Find me on Instagram at {link('https://www.instagram.com/caketour.by.alyssa/', '@caketour.by.alyssa')}.</span>,
           "Contact me at: alyssa.c.wang@gmail.com",
         ]}
       />
@@ -70,7 +69,7 @@ function About() {
         <List>
           {cakes.map((cake, i) => (
             <ListItem key={i}>
-              <img src={cake} width="400" height="100%"></img>
+              <img src={cake} width="400" height="100%" alt="cake pictures"></img>
             </ListItem>
           ))}
         </List>
