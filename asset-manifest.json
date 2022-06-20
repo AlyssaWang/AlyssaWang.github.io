@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5b608bf7.css",
-    "main.js": "/static/js/main.1f49fcfe.js",
+    "main.css": "/static/css/main.889449c2.css",
+    "main.js": "/static/js/main.538fbe59.js",
     "static/js/595.c8777ee3.chunk.js": "/static/js/595.c8777ee3.chunk.js",
     "static/js/699.e8d09406.chunk.js": "/static/js/699.e8d09406.chunk.js",
     "static/js/787.84fd2ec1.chunk.js": "/static/js/787.84fd2ec1.chunk.js",
@@ -13,7 +13,7 @@
     "static/media/cake5.jpg": "/static/media/cake5.378695b2b707cf0d614d.jpg",
     "static/media/cake1.jpg": "/static/media/cake1.310d7326437e03466a1b.jpg",
     "static/media/cake4.jpg": "/static/media/cake4.198535d78750e9691f97.jpg",
-    "static/media/alyssa.jpg": "/static/media/alyssa.25025f968b30e161de37.jpg",
+    "static/media/alyssa.jpg": "/static/media/alyssa.dff9af139b0534a40509.jpg",
     "static/media/resume.pdf": "/static/media/resume.bdb93339cf0cdbc275df.pdf",
     "static/media/roboto-all-500-normal.woff": "/static/media/roboto-all-500-normal.52cb737b682eb9661ee1.woff",
     "static/media/roboto-all-700-normal.woff": "/static/media/roboto-all-700-normal.ef6d1d09b20b877fee4e.woff",
@@ -49,12 +49,12 @@
     "static/media/roboto-greek-ext-300-normal.woff2": "/static/media/roboto-greek-ext-300-normal.04e05839d6a35e046c13.woff2",
     "static/media/roboto-greek-ext-700-normal.woff2": "/static/media/roboto-greek-ext-700-normal.9674bc0ae12c2551d9d1.woff2",
     "index.html": "/index.html",
-    "main.5b608bf7.css.map": "/static/css/main.5b608bf7.css.map",
-    "main.1f49fcfe.js.map": "/static/js/main.1f49fcfe.js.map",
+    "main.889449c2.css.map": "/static/css/main.889449c2.css.map",
+    "main.538fbe59.js.map": "/static/js/main.538fbe59.js.map",
     "787.84fd2ec1.chunk.js.map": "/static/js/787.84fd2ec1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5b608bf7.css",
-    "static/js/main.1f49fcfe.js"
+    "static/css/main.889449c2.css",
+    "static/js/main.538fbe59.js"
   ]
 }
