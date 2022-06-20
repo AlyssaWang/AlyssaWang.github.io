@@ -61,7 +61,7 @@ function About() {
         file=""
         text={[
           "Some hobbies of mine include cross-stitch, sending postcards, solving crosswords, and critically analyzing pop literature and media.",
-          "I also run a cake microblog. Here are some memorable cakes from the #caketour.",
+          <span>I also run a cake microblog. Here are some memorable cakes from the #caketour. Find me on Instagram at {link('https://www.instagram.com/caketour.by.alyssa/', '@caketour.by.alyssa')}.</span>,
           "Contact me at: alyssa.c.wang@gmail.com",
         ]}
       />

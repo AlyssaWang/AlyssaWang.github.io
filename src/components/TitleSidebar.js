@@ -64,7 +64,7 @@ function TitleSidebar({ title, file, text }) {
       </Box>
       {file &&
         <Typography variant="overline" className={classes.fileLink}>
-          <a href={pdf} target="_blank" className={classes.fileLink}>
+          <a href={pdf} target="_blank" rel="noreferrer" className={classes.fileLink}>
             OPEN PDF
           </a>
         </Typography>
