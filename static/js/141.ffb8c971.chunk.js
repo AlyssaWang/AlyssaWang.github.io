@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkalyssawang=self.webpackChunkalyssawang||[]).push([[141],{4141:(s,a,e)=>{s.exports=e.p+"static/media/resume.d17fb03b33d7b6a401c0.pdf"}}]);
