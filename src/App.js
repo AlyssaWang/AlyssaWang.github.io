@@ -35,7 +35,7 @@ function App() {
   const classes = useStyles();
 
   const link = (url, text) => (
-    <a href={url} target="_blank" className={classes.link}>
+    <a href={url} rel="noreferrer" target="_blank" className={classes.link}>
       {text}
     </a>
   );

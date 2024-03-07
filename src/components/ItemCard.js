@@ -5,7 +5,6 @@ import {
   Collapse,
   Typography,
   IconButton,
-  CardActionArea,
   CardActions,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
@@ -78,7 +77,7 @@ function ItemCard({ id, index, title, subtitle, link, textList }) {
         )}
         {link && (
           <Typography variant="body2">
-            <a href={link} target="_blank" className={classes.link}>
+            <a href={link} rel="noreferrer" target="_blank" className={classes.link}>
               {link}
             </a>
           </Typography>
