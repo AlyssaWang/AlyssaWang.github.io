@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Box, Drawer, Toolbar, Typography } from "@mui/material";
 import { makeStyles } from "@mui/styles";
+import FileLink from "./FileLink";
 
 const useStyles = makeStyles({
   root: {
@@ -21,13 +22,6 @@ const useStyles = makeStyles({
     color: "#24305E",
     padding: "10px",
   },
-  fileLink: {
-    fontSize: "1.0em !important",
-    textDecoration: "none",
-    "&:hover": {
-      color: "white",
-    },
-  },
   text: {
     maxWidth: "200px",
     margin: "24px 0 0 0 !important",
@@ -40,19 +34,6 @@ const useStyles = makeStyles({
 
 function TitleSidebar({ title, file, text }) {
   const classes = useStyles();
-  const [pdf, setPdf] = useState(undefined);
-
-  useEffect(() => {
-    async function fetchFile() {
-      if (file) {
-        await import(`../files/${file}`).then((r) => {
-          setPdf(r.default);
-        });
-      }
-    }
-
-    fetchFile();
-  }, []);
 
   return (
     <Drawer className={classes.root} variant="permanent" anchor="left">
@@ -62,15 +43,11 @@ function TitleSidebar({ title, file, text }) {
           {title.toUpperCase()}
         </Typography>
       </Box>
-      {file &&
-        <Typography variant="overline" className={classes.fileLink}>
-          <a href={pdf} target="_blank" rel="noreferrer" className={classes.fileLink}>
-            OPEN PDF
-          </a>
-        </Typography>
+      {file && <FileLink file={file} />
       }
-      {text.map(t => (
+      {text.map((t, i) => (
         <Typography
+          key={i}
           variant="subtitle1"
           color="text.secondary"
           className={classes.text}

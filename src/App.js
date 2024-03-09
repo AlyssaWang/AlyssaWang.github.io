@@ -49,7 +49,7 @@ function App() {
         </Typography>
       </Box>
       <Typography className={classes.text}>
-        SWE at {link("https://www.mitre.org/", "\u00A0MITRE")}
+        Senior SWE at {link("https://www.mitre.org/", "\u00A0MITRE")}
       </Typography>
       <Typography className={classes.text}>
         {link("https://www.williams.edu/", "Williams College")}{"\u00A0"}'20

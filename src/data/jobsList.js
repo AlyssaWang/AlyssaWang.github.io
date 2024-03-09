@@ -1,5 +1,15 @@
 export const jobsList = [
   {
+    id: "mitre-sr",
+    title: "Senior Software Engineer @ MITRE",
+    subtitle: "Solving problems for a safer world.",
+    link: "https://www.mitre.org/",
+    textList: [
+      "Led frontend development and design work on an open source web and mobile FHIR testing app built with React, Jekyll, and Ruby that is used industry- wide for health IT standard testing.Won major awards.",
+      "Implemented key displays, analyst workflows, and framework migrations on a Vue and D3.js data visualization app leveraging novel data to trace commercial power shifts.Won highest awards."
+    ],
+  },
+  {
     id: "mitre",
     title: "Software Engineer @ MITRE",
     subtitle: "Solving problems for a safer world.",
