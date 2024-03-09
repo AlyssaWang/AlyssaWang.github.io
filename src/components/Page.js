@@ -2,8 +2,8 @@ import React from "react";
 import { Box, Typography } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import { useWindowDimensions } from "../getWindowDimensions";
-import TitleSidebar from "../components/TitleSidebar";
-import FileLink from "../components/FileLink";
+import TitleSidebar from "./TitleSidebar";
+import FileLink from "./FileLink";
 
 const useStyles = makeStyles({
   root: {
@@ -37,8 +37,8 @@ function Page({
   file,
   textSections = [],
   children,
-  titleColor = "white",
-  bgColor = "#A8D0E6"
+  titleColor = "#24305E", // navy
+  bgColor = "#A8D0E6" // pale blue
 }) {
   const classes = useStyles();
   const { width } = useWindowDimensions();
@@ -50,24 +50,27 @@ function Page({
       sx={{ backgroundColor: bgColor }}
     >
       {fullScreen
-        ? <TitleSidebar
+        ?
+        <TitleSidebar
           title={title}
           file={file}
           text={textSections}
         />
-        : <>
+        :
+        <Box display="flex" flexDirection="column" alignItems="center" sx={{ mb: 2 }}>
           <Box className="typewriter" sx={{ mt: 10 }}>
             <Typography variant="h3" className={classes.title} sx={{ color: titleColor }}>
               {title.toUpperCase()}
             </Typography>
           </Box>
           {file && <FileLink file={file} />}
-          {textSections &&
-            <Box sx={{ m: 2, mt: 8 }}>
-              {textSections.map((text, i) => <Typography key={i} sx={{ mb: 2 }}>{text}</Typography>)}
+          {textSections.length > 0 &&
+            <Box sx={{ m: 2 }}>
+              {textSections.map((text, i) =>
+                <Typography key={i} sx={{ mb: 2 }}>{text}</Typography>)}
             </Box>
           }
-        </>
+        </Box>
       }
       <Box className={classes.cardContainer}>
         {children}

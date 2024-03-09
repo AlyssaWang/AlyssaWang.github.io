@@ -1,19 +1,20 @@
 import React from "react";
 import { Box } from "@mui/material";
 import { makeStyles } from "@mui/styles";
+import { useWindowDimensions } from "../getWindowDimensions";
 
 function ItemEndSpacer({ darkMode }) {
-  const useStyles = makeStyles({
+  const classes = makeStyles({
     root: {
       maxWidth: 500,
-      width: 500,
       height: 100,
       backgroundColor: darkMode ? "#24305E" : "white",
     },
   });
-  const classes = useStyles();
+  const { width } = useWindowDimensions();
+  const fullScreen = width > 500;
 
-  return <Box className={classes.root} />;
+  return <Box className={classes.root} sx={{ width: fullScreen ? 500 : "100%" }} />;
 }
 
 export default ItemEndSpacer;

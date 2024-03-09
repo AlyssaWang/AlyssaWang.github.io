@@ -10,13 +10,13 @@ import {
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 import { makeStyles } from "@mui/styles";
+import { useWindowDimensions } from "../getWindowDimensions";
 
 function ItemCard({ id, index, title, subtitle, link, textList }) {
   const darkMode = index % 2 === 1;
   const useStyles = makeStyles({
     root: {
       maxWidth: 500,
-      width: 500,
       borderRadius: "0 !important",
       backgroundColor: darkMode ? "#24305E !important" : "white !important",
     },
@@ -47,15 +47,18 @@ function ItemCard({ id, index, title, subtitle, link, textList }) {
       color: darkMode ? "#A8D0E6" : "#374785",
     },
   });
+
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
+  const { width } = useWindowDimensions();
+  const fullScreen = width > 500;
 
   const handleExpand = () => {
     setExpanded(!expanded);
   };
 
   return (
-    <Card className={classes.root} elevation={0}>
+    <Card className={classes.root} elevation={0} sx={{ width: fullScreen ? 500 : "100%" }}>
       <CardContent>
         <Typography
           gutterBottom
@@ -103,7 +106,7 @@ function ItemCard({ id, index, title, subtitle, link, textList }) {
           )}
         </IconButton>
       </CardActions>
-    </Card>
+    </Card >
   );
 }
 

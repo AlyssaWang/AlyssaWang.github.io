@@ -10,7 +10,7 @@ import cake5 from "../files/cake5.jpg";
 import cake6 from "../files/cake6.jpg";
 import cake7 from "../files/cake7.jpg";
 import cake8 from "../files/cake8.jpg";
-import Page from "./Page";
+import Page from "../components/Page";
 
 const useStyles = makeStyles({
   link: {
