@@ -16,7 +16,7 @@ const useStyles = makeStyles({
   link: {
     textDecoration: "none",
     "&:hover": {
-      color: "white",
+      color: "var(--white)",
     },
   },
 });
@@ -45,7 +45,7 @@ function About() {
   const fullScreen = width > 500;
 
   return (
-    <Page title="About Me" textSections={sections} bgColor="#d9f3c4">
+    <Page title="About" textSections={sections} bgColor="var(--green)">
       <List>
         {cakes.map((cake, i) => (
           <ListItem key={i}>

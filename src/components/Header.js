@@ -23,18 +23,18 @@ const useStyles = makeStyles({
     fontSize: '1em !important',
     textDecoration: 'none',
     display: 'block',
-    color: '#24305E !important',
+    color: 'var(--navy) !important',
     '&:hover': {
-      color: 'white !important',
+      color: 'var(--white) !important',
     },
   },
   mobileLink: {
     fontSize: '1em !important',
     textDecoration: 'none',
     display: 'block',
-    color: '#24305E !important',
+    color: 'var(--navy) !important',
     '&:hover': {
-      color: '#499ecb !important',
+      color: 'var(--blue-mid) !important',
     },
   },
 });
@@ -48,32 +48,30 @@ const Header = () => {
   const fullScreen = width > 500;
 
   return (
-    <>
-      <AppBar
-        position='fixed'
-        color={fullScreen ? 'transparent' : ''}
-        elevation={0}
-        className={fullScreen ? {} : classes.mobileRoot}
-        sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }}
-      >
-        <Toolbar disableGutters sx={{ margin: '0 16px' }}>
-          <Box className={classes.linksContainer}>
-            {pages.map((page) => (
-              <Box key={page} className={classes.linkContainer}>
-                <Link
-                  href={`#/${page.toLowerCase()}`}
-                  underline='none'
-                  variant='overline'
-                  className={fullScreen ? classes.link : classes.mobileLink}
-                >
-                  {page}
-                </Link>
-              </Box>
-            ))}
-          </Box>
-        </Toolbar>
-      </AppBar>
-    </>
+    <AppBar
+      position='fixed'
+      color={fullScreen ? 'transparent' : ''}
+      elevation={0}
+      className={fullScreen ? {} : classes.mobileRoot}
+      sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }}
+    >
+      <Toolbar disableGutters sx={{ mx: 2 }}>
+        <Box className={classes.linksContainer}>
+          {pages.map((page) => (
+            <Box key={page} className={classes.linkContainer}>
+              <Link
+                href={`#/${page.toLowerCase()}`}
+                underline='none'
+                variant='overline'
+                className={fullScreen ? classes.link : classes.mobileLink}
+              >
+                {page}
+              </Link>
+            </Box>
+          ))}
+        </Box>
+      </Toolbar>
+    </AppBar>
   );
 };
 export default Header;

@@ -37,8 +37,8 @@ function Page({
   file,
   textSections = [],
   children,
-  titleColor = "#24305E", // navy
-  bgColor = "#A8D0E6" // pale blue
+  titleColor = "var(--navy-dark)",
+  bgColor = "var(--blue-light)"
 }) {
   const classes = useStyles();
   const { width } = useWindowDimensions();

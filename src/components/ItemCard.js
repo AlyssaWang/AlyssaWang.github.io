@@ -18,33 +18,33 @@ function ItemCard({ id, index, title, subtitle, link, textList }) {
     root: {
       maxWidth: 500,
       borderRadius: "0 !important",
-      backgroundColor: darkMode ? "#24305E !important" : "white !important",
+      backgroundColor: darkMode ? "var(--navy) !important" : "var(--white) !important",
     },
     title: {
       fontSize: "2em !important",
       lineHeight: "1 !important",
       margin: "32px 0 !important",
-      color: darkMode ? "white" : "#24305E",
+      color: darkMode ? "var(--white)" : "var(--navy)",
     },
     subtitle: {
-      color: darkMode ? "white" : "#24305E",
+      color: darkMode ? "var(--white)" : "var(--navy)",
     },
     link: {
-      color: darkMode ? "#A8D0E6" : "#374785",
+      color: darkMode ? "var(--blue-light)" : "var(--navy)",
       fontWeight: "bolder",
       "&:hover": {
-        color: "#F76C6C",
+        color: "var(--pink)",
       },
     },
     text: {
       margin: "8px 0 !important",
-      color: darkMode ? "#C2C2C2 !important" : "#818181 !important",
+      color: darkMode ? "var(--grey-light) !important" : "var(--grey-mid) !important",
     },
     actions: {
       justifyContent: "center",
     },
     icon: {
-      color: darkMode ? "#A8D0E6" : "#374785",
+      color: darkMode ? "var(--blue-light)" : "var(--navy)",
     },
   });
 

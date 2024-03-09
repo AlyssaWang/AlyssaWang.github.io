@@ -7,7 +7,7 @@ const useStyles = makeStyles({
     fontSize: "1.0em !important",
     textDecoration: "none",
     "&:hover": {
-      color: "white",
+      color: "var(--white)",
     },
   },
 });

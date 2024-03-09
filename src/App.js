@@ -12,11 +12,11 @@ const useStyles = makeStyles({
     justifyContent: "center",
     minHeight: "100vh",
     height: "100%",
-    backgroundColor: "#A8D0E6",
+    backgroundColor: "var(--blue-light)",
   },
   title: {
-    backgroundColor: "#24305E",
-    color: "white",
+    backgroundColor: "var(--navy)",
+    color: "var(--white)",
     padding: "10px",
   },
   text: {
@@ -26,7 +26,7 @@ const useStyles = makeStyles({
   link: {
     textDecoration: "none",
     "&:hover": {
-      color: "white",
+      color: "var(--white)",
     },
   },
 });

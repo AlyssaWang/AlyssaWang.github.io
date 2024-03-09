@@ -6,7 +6,7 @@ import Page from "../components/Page";
 
 function Resume() {
   return (
-    <Page title="Resume" file="resume.pdf" bgColor="#bc97fd">
+    <Page title="Resume" file="resume.pdf" bgColor="var(--purple)">
       <ItemEndSpacer darkMode={true} />
       {jobsList.map((job, i) => (
         <ItemCard

@@ -6,7 +6,7 @@ import Page from "../components/Page";
 
 function Projects() {
   return (
-    <Page title="Projects" file="projects.pdf" bgColor="#F8E9A1">
+    <Page title="Projects" file="projects.pdf" bgColor="var(--yellow)">
       <ItemEndSpacer darkMode={true} />
       {projectsList.map((project, i) => (
         <ItemCard
