@@ -19,7 +19,7 @@ const useStyles = makeStyles({
     },
   },
   title: {
-    color: "#24305E",
+    color: "var(--navy-dark)",
     padding: "10px",
   },
   text: {

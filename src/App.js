@@ -1,8 +1,9 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-import propic from "./files/alyssa.jpg";
-import "./App.css";
 import { makeStyles } from "@mui/styles";
+import propic from "./files/alyssa.jpg";
+import { useWindowDimensions } from "./getWindowDimensions";
+import "./App.css";
 
 const useStyles = makeStyles({
   root: {
@@ -18,6 +19,8 @@ const useStyles = makeStyles({
     backgroundColor: "var(--navy)",
     color: "var(--white)",
     padding: "10px",
+    textTransform: "uppercase",
+    textAlign: "center",
   },
   text: {
     display: "flex",
@@ -33,6 +36,8 @@ const useStyles = makeStyles({
 
 function App() {
   const classes = useStyles();
+  const { width } = useWindowDimensions();
+  const fullScreen = width > 500;
 
   const link = (url, text) => (
     <a href={url} rel="noreferrer" target="_blank" className={classes.link}>
@@ -43,9 +48,13 @@ function App() {
   return (
     <Box className={classes.root}>
       <img id="profile-pic" src={propic} alt="Alyssa Wang"></img>
-      <Box className="typewriter" sx={{ marginBottom: "10px" }}>
-        <Typography variant="h3" className={classes.title}>
-          ALYSSA WANG
+      <Box className="typewriter" sx={{ mb: 1, width: fullScreen ? 'auto' : "60%" }}>
+        <Typography
+          variant="h3"
+          className={classes.title}
+          sx={{ textWrap: fullScreen ? '' : "balance !important" }}
+        >
+          Alyssa Wang
         </Typography>
       </Box>
       <Typography className={classes.text}>
@@ -64,7 +73,7 @@ function App() {
         {"\u00A0"}•{"\u00A0"}
         {link("https://linkedin.com/in/alyssacwang", "LinkedIn")}
       </Typography>
-    </Box>
+    </Box >
   );
 }
 

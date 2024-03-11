@@ -8,7 +8,7 @@ function ItemEndSpacer({ darkMode }) {
     root: {
       maxWidth: 500,
       height: 100,
-      backgroundColor: darkMode ? "#24305E" : "white",
+      backgroundColor: darkMode ? "var(--navy-dark)" : "var(--white)",
     },
   });
   const { width } = useWindowDimensions();
