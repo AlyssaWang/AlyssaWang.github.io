@@ -5,8 +5,8 @@ export const jobsList = [
     subtitle: "Solving problems for a safer world.",
     link: "https://www.mitre.org/",
     textList: [
-      "Led frontend development and design work on an open source web and mobile FHIR testing app built with React, Jekyll, and Ruby that is used industry- wide for health IT standard testing.Won major awards.",
-      "Implemented key displays, analyst workflows, and framework migrations on a Vue and D3.js data visualization app leveraging novel data to trace commercial power shifts.Won highest awards."
+      "Led frontend development and design work on an open source web and mobile FHIR testing app built with React, Jekyll, and Ruby that is used industry-wide for health IT standard testing.",
+      "Implemented key displays, analyst workflows, and framework migrations on a Vue and D3.js data visualization app leveraging novel data to trace commercial power shifts."
     ],
   },
   {

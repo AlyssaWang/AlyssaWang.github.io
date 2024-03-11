@@ -33,7 +33,7 @@ function ItemCard({ id, index, title, subtitle, link, textList }) {
       color: darkMode ? "var(--blue-light)" : "var(--navy)",
       fontWeight: "bolder",
       "&:hover": {
-        color: "var(--pink)",
+        color: "var(--coral)",
       },
     },
     text: {

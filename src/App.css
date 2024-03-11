@@ -7,32 +7,37 @@ https://www.awwwards.com/sites/waaark
 #F8E9A1 light yellow
 */
 :root {
-  --blue-mid: #499ecb;
   --blue-light: #A8D0E6;
+  --blue-mid: #499ecb;
+  --cobalt: #245999;
+  --coral-dark: #c95757;
+  --coral: #F76C6C;
   --green: #d9f3c4;
   --grey-light: #C2C2C2;
   --grey-mid: #818181;
   --navy-dark: #24305E;
   --navy: #374785;
-  --pink: #F76C6C;
   --purple: #bc97fd;
   --white: white;
   --yellow: #F8E9A1;
 }
 
 body {
-  background-color: lightgray;
+  background-color: var(--grey-light);
 }
 
-a,
 p {
-  color: #24305E;
+  color: var(--navy-dark);
+}
+
+a {
+  color: var(--cobalt);
 }
 
 .typewriter h3 {
   overflow: hidden;
   /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid #F76C6C;
+  border-right: .15em solid var(--coral);
   /* The typewriter cursor */
   white-space: nowrap;
   /* Keeps the content on a single line */
@@ -41,7 +46,7 @@ p {
   letter-spacing: .15em;
   /* Adjust as needed */
   animation:
-    typing 3.5s steps(25, end),
+    typing 3s steps(25, end),
     blink-caret .75s step-end infinite;
 }
 
@@ -65,7 +70,7 @@ p {
   }
 
   50% {
-    border-color: #F76C6C;
+    border-color: var(--coral);
   }
 }
 
